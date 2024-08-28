@@ -1,0 +1,12 @@
+services:
+  typescript:
+    build:
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/ts/
+    ports:
+      - 3000:3000
+    command:
+      - npm
+      - run
+      - dev

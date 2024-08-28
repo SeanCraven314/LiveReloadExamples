@@ -1,0 +1,8 @@
+services:
+  python-reload:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      ## Set the volume as the <current directory>:<WORKDIR docker command>
+      - ./:/server
